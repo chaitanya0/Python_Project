@@ -9,6 +9,40 @@
             <div class="card">
                 <div class="card-body" style="background-color: darkblue">
                     <div class="stat-widget-five">
+                        <div class="stat-icon dib flat-color-3">
+                            <i class="fa fa-hospital-o"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="text-left dib">
+                                <div class="stat-text"><span class="count" style="color: white">{{ supplier }}</span></div>
+                                <div class="stat-heading" style="color: white">Depots</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color: darkblue">
+                    <div class="stat-widget-five">
+                        <div class="stat-icon dib flat-color-4">
+                            <i class="fa fa-h-square"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="text-left dib">
+                                <div class="stat-text"><span class="count" style="color: white">{{ buyer }}</span></div>
+                                <div class="stat-heading" style="color: white">Sites</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color: darkblue">
+                    <div class="stat-widget-five">
                         <div class="stat-icon dib flat-color-1">
                             <i class="fa fa-shopping-cart"></i>
                         </div>
@@ -39,43 +73,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-            <div class="card">
-                <div class="card-body" style="background-color: darkblue">
-                    <div class="stat-widget-five">
-                        <div class="stat-icon dib flat-color-3">
-                            <i class="fa fa-hospital-o"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="text-left dib">
-                                <div class="stat-text"><span class="count" style="color: white">{{ supplier }}</span></div>
-                                <div class="stat-heading" style="color: white">Depots</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-            <div class="card">
-                <div class="card-body" style="background-color: darkblue">
-                    <div class="stat-widget-five">
-                        <div class="stat-icon dib flat-color-4">
-                            <i class="fa fa-h-square"></i>
-                        </div>
-                        <div class="stat-content">
-                            <div class="text-left dib">
-                                <div class="stat-text"><span class="count" style="color: white">{{ buyer }}</span></div>
-                                <div class="stat-heading" style="color: white">Sites</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>      
     </div>
     <!-- /Widgets -->
     
@@ -95,11 +93,11 @@
                                 <thead>
                                     <tr>
                                         <th class="serial">#</th>
-                                        <th>Supplier</th>
+                                        <th>Depot</th>
+                                        <th>Site</th>
                                         <th>Product</th>
-                                        <th>Design</th>
-                                        <th>Color</th>
-                                        <th>Buyer</th>
+                                        <!--<th>Design</th> -->
+                                        <!--<th>Color</th>-->                                        
                                       <!--  <th>Season</th>-->
                                         <th>Category</th>
                                         <th>Date</th>
@@ -112,10 +110,10 @@
                                     <tr>
                                         <td class="serial">{{ forloop.counter }}</td>
                                         <td>{{ order.supplier }}</td>
-                                        <td>{{ order.product }}</td>
-                                        <td>{{ order.design }}</td>
-                                        <td>{{ order.color }}</td>
                                         <td>{{ order.buyer }}</td>
+                                        <td>{{ order.product }}</td>
+                                       <!-- <td>{{ order.design }}</td>-->
+                                       <!-- <td>{{ order.color }}</td>-->                                        
                                        <!-- <td>{{ order.season }}</td> --> 
                                         <td>{{ order.drop }}</td>
                                         <td>{{ order.created_date }}</td>

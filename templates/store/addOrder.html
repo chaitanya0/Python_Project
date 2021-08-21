@@ -43,23 +43,23 @@
                         <form action="#" method="post" novalidate="novalidate">
                             {% csrf_token %}
                             <div class="form-group">
-                                <label for="supplier" class="control-label mb-1">Supplier</label>
+                                <label for="supplier" class="control-label mb-1">Depot</label>
                                 {{ form.supplier }}
                             </div>
                             <div class="form-group">
                                 <label for="product" class="control-label mb-1">Product</label>
                                 {{ form.product }}
                             </div>
-                            <div class="form-group">
+                           <!-- <div class="form-group">
                                 <label for="design" class="control-label mb-1">Design</label>
                                 {{ form.design }}
                             </div>
                             <div class="form-group">
                                 <label for="color" class="control-label mb-1">Color</label>
                                 {{ form.color }}
-                            </div>
+                            </div> -->
                             <div class="form-group">
-                                <label for="buyer" class="control-label mb-1">Buyer</label>
+                                <label for="buyer" class="control-label mb-1">Site</label>
                                 {{ form.buyer }}
                             </div>
                             <!--<div class="form-group">
