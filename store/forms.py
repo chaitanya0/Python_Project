@@ -1,6 +1,7 @@
 from django import forms
 
-from .models import Season, Drop, Product, Order, Delivery
+#from .models import Season, Drop, Product, Order, Delivery
+from .models import  Drop, Product, Order, Delivery
 
 
 class SupplierForm(forms.Form):
@@ -80,15 +81,15 @@ class BuyerForm(forms.Form):
     }))
 
 
-class SeasonForm(forms.ModelForm):
-    class Meta:
-        model = Season
-        fields = ['name', 'description']
-
-        widgets = {
-            'name': forms.TextInput(attrs={'class': 'form-control', 'id': 'name'}),
-            'description': forms.TextInput(attrs={'class': 'form-control', 'id': 'description'})
-        }
+#class SeasonForm(forms.ModelForm):
+#    class Meta:
+#        model = Season
+#        fields = ['name', 'description']
+#
+#        widgets = {
+#            'name': forms.TextInput(attrs={'class': 'form-control', 'id': 'name'}),
+#            'description': forms.TextInput(attrs={'class': 'form-control', 'id': 'description'})
+#        }
 
 
 class DropForm(forms.ModelForm):
@@ -114,15 +115,15 @@ class ProductForm(forms.ModelForm):
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ['supplier', 'product', 'design', 'color', 'buyer', 'season', 'drop']
-
+        #fields = ['supplier', 'product', 'design', 'color', 'buyer', 'season', 'drop']
+        fields = ['supplier', 'product', 'design', 'color', 'buyer', 'drop']
         widgets = {
             'supplier': forms.Select(attrs={'class': 'form-control', 'id': 'supplier'}),
             'product': forms.Select(attrs={'class': 'form-control', 'id': 'product'}),
             'design': forms.TextInput(attrs={'class': 'form-control', 'id': 'design'}),
             'color': forms.TextInput(attrs={'class': 'form-control', 'id': 'color'}),
             'buyer': forms.Select(attrs={'class': 'form-control', 'id': 'buyer'}),
-            'season': forms.Select(attrs={'class': 'form-control', 'id': 'season'}),
+           # 'season': forms.Select(attrs={'class': 'form-control', 'id': 'season'}),            
             'drop': forms.Select(attrs={'class': 'form-control', 'id': 'drop'}),
         }
 
