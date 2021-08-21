@@ -151,16 +151,16 @@ def create_order(request):
         if forms.is_valid():
             supplier = forms.cleaned_data['supplier']
             product = forms.cleaned_data['product']
-            design = forms.cleaned_data['design']
-            color = forms.cleaned_data['color']
+           # design = forms.cleaned_data['design']
+           # color = forms.cleaned_data['color']
             buyer = forms.cleaned_data['buyer']
             #season = forms.cleaned_data['season']
             drop = forms.cleaned_data['drop']
             Order.objects.create(
                 supplier=supplier,
                 product=product,
-                design=design,
-                color=color,
+               # design=design,
+               # color=color,
                 buyer=buyer,
                 #season=season,
                 drop=drop,
