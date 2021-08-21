@@ -123,6 +123,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = 'C:/Users/chaiy/Downloads/Python Practice/inventory_management_system_using_django/inventory_management_system_using_django/static/assets'
+
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 AUTH_USER_MODEL = 'users.User'
