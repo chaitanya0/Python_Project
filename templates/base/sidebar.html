@@ -53,6 +53,73 @@
                         <li><i class="fa fa-eye" style="color: darkblue"></i><a href="{% url 'delivery-list' %}">View</a></li>
                     </ul>
                 </li>
+               <!--Patient manager-->
+                <li class="menu-title" style="color: darkgreen">Subject Management</li><!-- /.menu-title -->
+                <li class="menu-item-has-children dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-user-md"></i>Subject Matrix</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-plus-circle" style="color: darkgreen"></i><a href="{% url 'create-supplier' %}">Add/Enroll</a></li>
+                        <li><i class="fa fa-eye" style="color: darkgreen"></i><a href="{% url 'supplier-list' %}">View</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-calendar"></i>Subject Tasks</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-plus-circle" style="color: darkgreen"></i><a href="{% url 'create-supplier' %}">Schedule Event</a></li>
+                        <li><i class="fa fa-eye" style="color: darkgreen"></i><a href="{% url 'supplier-list' %}">View</a></li>
+                    </ul>
+                </li>                
+               <!--EDC tasks-->
+               <li class="menu-title" style="color: darkgoldenrod">Electronic Data Capture</li><!-- /.menu-title -->
+               <li class="menu-item-has-children dropdown" >
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cloud-upload"></i>Import Data</a>
+                   <ul class="sub-menu children dropdown-menu">
+                       <li><i class="fa fa-plus-circle" style="color: darkgoldenrod"></i><a href="{% url 'create-supplier' %}">Import</a></li>
+                       <li><i class="fa fa-eye" style="color: darkgoldenrod"></i><a href="{% url 'supplier-list' %}">View</a></li>
+                   </ul>
+               </li>
+               <li class="menu-item-has-children dropdown" >
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cloud-download"></i>Export Data</a>
+                <ul class="sub-menu children dropdown-menu">
+                    <li><i class="fa fa-plus-circle" style="color: darkgoldenrod"></i><a href="{% url 'create-supplier' %}">Export</a></li>
+                    <li><i class="fa fa-eye" style="color: darkgoldenrod"></i><a href="{% url 'supplier-list' %}">View</a></li>
+                </ul>
+            </li>
+               <li class="menu-item-has-children dropdown" >
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-database"></i>Dataset</a>
+                   <ul class="sub-menu children dropdown-menu">
+                       <li><i class="fa fa-plus-circle" style="color: darkgoldenrod"></i><a href="{% url 'create-supplier' %}">Create Dataset</a></li>
+                       <li><i class="fa fa-eye" style="color: darkgoldenrod"></i><a href="{% url 'supplier-list' %}">View</a></li>
+                   </ul>
+               </li> 
+               <li class="menu-item-has-children dropdown" >
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-calendar-o"></i>Study Events</a>
+                <ul class="sub-menu children dropdown-menu">
+                    <li><i class="fa fa-plus-circle" style="color: darkgoldenrod"></i><a href="{% url 'create-supplier' %}">Visit Dataset</a></li>
+                    <li><i class="fa fa-eye" style="color: darkgoldenrod"></i><a href="{% url 'supplier-list' %}">View</a></li>
+                    <li><i class="fa fa-plus-circle" style="color: darkgoldenrod"></i><a href="{% url 'create-supplier' %}">Lab Dataset</a></li>
+                    <li><i class="fa fa-eye" style="color: darkgoldenrod"></i><a href="{% url 'supplier-list' %}">View</a></li>                    
+                    <li><i class="fa fa-plus-circle" style="color: darkgoldenrod"></i><a href="{% url 'create-supplier' %}">CRF Attributes</a></li>
+                    <li><i class="fa fa-eye" style="color: darkgoldenrod"></i><a href="{% url 'supplier-list' %}">View</a></li>                       
+                </ul>
+                <!--Misc tasks-->
+                <li class="menu-title" style="color: darkslategrey">Misc Tasks</li><!-- /.menu-title -->
+                <li class="menu-item-has-children dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-sticky-note-o"></i>Notes & Discrepancies</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-plus-circle" style="color: darkslategrey"></i><a href="{% url 'create-supplier' %}">Add Note</a></li>
+                        <li><i class="fa fa-eye" style="color: darkslategrey"></i><a href="{% url 'supplier-list' %}">View</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bell-o"></i>Remainders</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-plus-circle" style="color: darkslategrey"></i><a href="{% url 'create-supplier' %}">Add Remainder</a></li>
+                        <li><i class="fa fa-eye" style="color: darkslategrey"></i><a href="{% url 'supplier-list' %}">View</a></li>
+                    </ul>
+                </li>  
+
+            </li>                
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
